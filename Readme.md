@@ -10,17 +10,17 @@
 
 <div align='center'>
     <h2>First Page</h2>
-    <img style='border-radius:5px' src="./images/1.jpg"></img>
+    <img style='border-radius:5px; width: 300px; height: auto' src="./images/1.jpg"></img>
 </div>
 <hr/>
 <div align='center'>
     <h2>Guess Page</h2>
-    <img style='border-radius:5px' src="./images/2.jpg"></img>
+    <img style='border-radius:5px; width: 300px; height: auto' src="./images/2.jpg"></img>
 </div>
 <hr/>
 <div align='center'>
     <h2>Guess Page</h2>
-    <img style='border-radius:5px' src="./images/3.jpg"></img>
+    <img style='border-radius:5px; width: 300px; height: auto' src="./images/3.jpg"></img>
 </div>
 <hr/>
 
