@@ -62,4 +62,4 @@ Open IDE's terminal and then write `~ npm i` to install dependencies
 
 Then write `~ npm start` and then enter
 
-Congratulations ,now you can use this page for your beautiful project.
+Congratulations ,now you can play the game and enjoy it.
