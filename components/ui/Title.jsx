@@ -1,5 +1,9 @@
 import { Text, StyleSheet } from 'react-native';
 
+/**
+ * @param {Object} param 
+ * @param {import('react').ReactNode} param.children  
+ */
 function Title({ children }) {
   return <Text style={styles.title}>{children}</Text>;
 }
