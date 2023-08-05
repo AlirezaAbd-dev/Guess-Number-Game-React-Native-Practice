@@ -7,6 +7,11 @@ import Colors from '../constants/colors';
 import Card from '../components/ui/Card';
 import InstructionText from '../components/ui/InstructionText';
 
+/**
+ * 
+ * @param {{onPickNumber: (pickedNumber: number)=>void}} param 
+ * @returns 
+ */
 function StartGameScreen({ onPickNumber }) {
   const [enteredNumber, setEnteredNumber] = useState('');
 

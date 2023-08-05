@@ -24,11 +24,18 @@ export default function App() {
     return <AppLoading />;
   }
 
+  /**
+   * 
+   * @param {number} pickedNumber 
+   */
   function pickedNumberHandler(pickedNumber) {
     setUserNumber(pickedNumber);
     setGameIsOver(false);
   }
 
+  /**
+   * @param {number} numberOfRounds 
+   */
   function gameOverHandler(numberOfRounds) {
     setGameIsOver(true);
     setGuessRounds(numberOfRounds);

@@ -2,6 +2,9 @@ import { View, Text, Pressable, StyleSheet } from 'react-native';
 
 import Colors from '../../constants/colors';
 
+/**
+ * @param {{children: React.ReactNode, onPress: ()=> void}} params 
+ */
 function PrimaryButton({ children, onPress }) {
   return (
     <View style={styles.buttonOuterContainer}>
