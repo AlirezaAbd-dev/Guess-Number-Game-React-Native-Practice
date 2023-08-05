@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { StyleSheet, ImageBackground, SafeAreaView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
+import { StatusBar } from "expo-status-bar"
 import AppLoading from 'expo-app-loading';
 
 import StartGameScreen from './screens/StartGameScreen';
@@ -61,6 +62,7 @@ export default function App() {
       colors={[Colors.primary700, Colors.accent500]}
       style={styles.rootScreen}
     >
+      <StatusBar backgroundColor='transparent' hidden={false} style='light' animated={true} />
       <ImageBackground
         source={require('./assets/images/background.png')}
         resizeMode="cover"
