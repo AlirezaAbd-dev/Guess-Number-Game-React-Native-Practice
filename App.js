@@ -34,7 +34,7 @@ export default function App() {
   }
 
   /**
-   * @param {number} numberOfRounds 
+   * @type {(numberOfRoundes: number)=> void} 
    */
   function gameOverHandler(numberOfRounds) {
     setGameIsOver(true);

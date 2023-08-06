@@ -9,6 +9,12 @@ import PrimaryButton from '../components/ui/PrimaryButton';
 import Title from '../components/ui/Title';
 import GuessLogItem from '../components/game/GuessLogItem';
 
+/**
+ * 
+ * @param {number} min 
+ * @param {number} max 
+ * @returns 
+ */
 function generateRandomBetween(min, max, exclude) {
   const rndNum = Math.floor(Math.random() * (max - min)) + min;
 
@@ -22,6 +28,12 @@ function generateRandomBetween(min, max, exclude) {
 let minBoundary = 1;
 let maxBoundary = 100;
 
+/**
+ * 
+ * @param {Object} params 
+ * @param {number} params.userNumber
+ * @param {(numberOfRoundes: number)=> void} params.onGameOver
+ */
 function GameScreen({ userNumber, onGameOver }) {
   const initialGuess = generateRandomBetween(1, 100, userNumber);
   const [currentGuess, setCurrentGuess] = useState(initialGuess);
@@ -38,8 +50,10 @@ function GameScreen({ userNumber, onGameOver }) {
     maxBoundary = 100;
   }, []);
 
+  /**
+   * @param {"lower" | "greater"} direction 
+   */
   function nextGuessHandler(direction) {
-    // direction => 'lower', 'greater'
     if (
       (direction === 'lower' && currentGuess < userNumber) ||
       (direction === 'greater' && currentGuess > userNumber)
