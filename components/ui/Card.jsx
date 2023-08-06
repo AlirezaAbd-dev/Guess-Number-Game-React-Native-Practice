@@ -2,6 +2,10 @@ import { View, StyleSheet } from 'react-native';
 
 import Colors from '../../constants/colors';
 
+/** 
+ * @param {Object} param 
+ * @param {React.ReactNode} param.children 
+*/
 function Card({ children }) {
   return <View style={styles.card}>{children}</View>;
 }

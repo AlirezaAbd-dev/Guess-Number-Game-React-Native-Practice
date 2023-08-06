@@ -15,6 +15,7 @@ import InstructionText from '../components/ui/InstructionText';
 function StartGameScreen({ onPickNumber }) {
   const [enteredNumber, setEnteredNumber] = useState('');
 
+  /** @type {(text: string)=>void} */
   function numberInputHandler(enteredText) {
     setEnteredNumber(enteredText);
   }
