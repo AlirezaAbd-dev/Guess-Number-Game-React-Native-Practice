@@ -4,11 +4,14 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { StatusBar } from "expo-status-bar"
 import AppLoading from 'expo-app-loading';
+import * as SplashScreen from "expo-splash-screen"
 
 import StartGameScreen from './screens/StartGameScreen';
 import GameScreen from './screens/GameScreen';
 import GameOverScreen from './screens/GameOverScreen';
 import Colors from './constants/colors';
+
+SplashScreen.preventAutoHideAsync()
 
 export default function App() {
   const [userNumber, setUserNumber] = useState();
@@ -20,8 +23,8 @@ export default function App() {
     'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
   });
 
-  if (!fontsLoaded) {
-    return <AppLoading />;
+  if (fontsLoaded) {
+    SplashScreen.hideAsync()
   }
 
   /**
@@ -69,7 +72,7 @@ export default function App() {
       colors={[Colors.primary700, Colors.accent500]}
       style={styles.rootScreen}
     >
-      <StatusBar backgroundColor='transparent' hidden={false} style='light' animated={true} />
+      <StatusBar backgroundColor='transparent' hidden={true} style='light' animated={true} />
       <ImageBackground
         source={require('./assets/images/background.png')}
         resizeMode="cover"

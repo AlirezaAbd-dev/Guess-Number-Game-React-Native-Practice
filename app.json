@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "RNCourse",
-    "slug": "RNCourse",
+    "name": "Guess Number",
+    "slug": "GuessNumber",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/toss.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/toss.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#7200cc"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -21,17 +21,17 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/toss.png",
+        "backgroundColor": "#7200cc"
       },
-      "package": "com.a.r.a.RNCourse"
+      "package": "com.a.r.a.GuessNumber"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "cb14884d-9d28-405b-b807-0996851f69cd"
+        "projectId": "b9ecf147-ff4b-44b7-a630-f219546ebe1a"
       }
     }
   }
