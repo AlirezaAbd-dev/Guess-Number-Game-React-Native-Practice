@@ -3,7 +3,6 @@ import { StyleSheet, ImageBackground, SafeAreaView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { StatusBar } from "expo-status-bar"
-import AppLoading from 'expo-app-loading';
 import * as SplashScreen from "expo-splash-screen"
 
 import StartGameScreen from './screens/StartGameScreen';
